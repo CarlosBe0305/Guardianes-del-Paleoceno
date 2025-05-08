@@ -3,7 +3,7 @@
     width: 100%;
     padding: 2.5% 2% 15% 2%;
     background-color: #DFE1AE;
-    z-index: 5;
+    z-index: 0;
 }
 .navfab {
     background-color: #04382b93;
