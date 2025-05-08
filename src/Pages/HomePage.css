@@ -1,0 +1,29 @@
+.Title {
+    position: relative; /* Permite ajustar la posición */
+    top: -200px; /* Ajusta este valor para que el contenido suba */
+    z-index: 10; /* Asegura que el contenido esté por encima del navbar */
+    color: #04382B;
+    display: inline;
+    
+  }
+  h1, h3 {
+    display: inline;
+  }
+  h1 {
+    font-size: 3em;
+    font-weight:1000;
+    position: relative;
+    top: -20px;
+    padding: 0;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: 800;
+    
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    position: relative;
+    top: -20px;
+  }

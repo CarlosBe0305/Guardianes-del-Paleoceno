@@ -1,0 +1,17 @@
+
+.navbar {
+    width: 100%;
+    padding: 2.5% 2% 15% 2%;
+    background-color: #DFE1AE;
+    z-index: 5;
+}
+.navfab {
+    background-color: #04382b93;
+    padding: 0% 2%;
+    border-radius: 50px;
+}
+.nav-link {
+    color: white;
+    font-size: 0.6em;
+    font-weight: bold;
+}

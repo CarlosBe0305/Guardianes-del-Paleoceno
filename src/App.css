@@ -14,7 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #FFF4E2;
+  color: white;
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
