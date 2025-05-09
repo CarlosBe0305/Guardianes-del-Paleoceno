@@ -7,8 +7,8 @@ import './styles/NavFAB.css';
 
 function NavFAB() {
   return (
-    <Navbar expand="lg" className="fixed-top">
-      <Container fluid>
+    <Navbar expand="lg" >
+      <Container fluid className="fixed-top">
         <Navbar.Brand href="#home"></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

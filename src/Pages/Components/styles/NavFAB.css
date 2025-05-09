@@ -1,7 +1,7 @@
 
 .navbar {
     width: 100%;
-    padding: 2.5% 2% 15% 2%;
+    height: 45vh;
     background-color: #DFE1AE;
     z-index: 0;
 }
@@ -9,9 +9,13 @@
     background-color: #04382b93;
     padding: 0% 2%;
     border-radius: 50px;
+    z-index:10;
 }
 .nav-link {
     color: white;
-    font-size: 0.6em;
+    font-size: 0.8em;
     font-weight: bold;
+}
+.fixed-top{
+    top: 5%;
 }

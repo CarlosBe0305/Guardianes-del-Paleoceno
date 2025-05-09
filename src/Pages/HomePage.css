@@ -1,5 +1,29 @@
+.App{
+  background-color: #FFF4E2;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-body{
+  position: relative;
+  top: 100px;
+}
+.App-header{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 .Title {
-    position: relative; /* Permite ajustar la posición */
+    position: absolute; /* Permite ajustar la posición */
     z-index: 1; /* Asegura que el contenido esté por encima del navbar */
     color: #04382B;
     display: inline;
@@ -35,4 +59,36 @@ section{
   color: #04382B;
   text-align: left;
   z-index: 1;
+}
+
+.Info {
+  display: flex; /* Activa Flexbox */
+  align-items: stretch; /* Estira los elementos hijos para que tengan la misma altura */
+  justify-content: space-between; /* Mantiene separación horizontal entre texto e imagen */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+  gap: 20px; /* Espacio entre los elementos */
+  margin: 5%; /* Margen alrededor del contenedor */
+}
+
+
+.Info-Text {
+  flex: 1; /* El texto ocupará el espacio disponible */
+  padding: 20px; /* Espacio interno */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.Info-Image {
+  flex: 1; /* La imagen ocupará el mismo espacio que el texto */
+  display: flex; /* Activa Flexbox para centrar la imagen */
+  align-items: center; /* Centra la imagen verticalmente */
+  justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.Info-Image img {
+  max-height: 100%; /* La imagen no será más alta que el contenedor */
+  max-width: 90%; /* Limita el ancho máximo de la imagen */
+  width: auto; /* Mantiene la proporción de la imagen */
+  height: auto; /* Ajusta la altura automáticamente */
+  display: block; /* Elimina espacio extra alrededor de la imagen */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
 }

@@ -11,25 +11,34 @@ function HomePage() {
           <h2>Guardianes</h2>
           <h3>del </h3>
           <h1>PALEOCENO</h1>
+          <div className="Dinosaurios-Image">
+            <img src="/images/Dinosaurios.png" alt="Dinosaurios"/>
+          </div>
         </div>
-        <section className="Alianza-Biofilia">
-          <div className="Alianza-Biofilia-Text">
-            <br/><br/><br/><br/>
+      </header>
+      <div className="App-body">
+        <section className="Info d-flex flex-nowrap">
+          <div className="Info-Text">
             <h4>Alianza Biofilia</h4>
-            <p>Biofilia es una red de colaboración conformada<br/>
-              por museos, universidades, centros de ciencia e<br/>
-              instituciones dedicadas a la divulgación del<br/>
-              conocimiento natural en Colombia. Su objetivo es<br/>
-              fortalecer el aprendizaje, la investigación y la<br/>
-              conexión de las personas con la biodiversidad del<br/>
-              país mediante experiencias educativas, científicas<br/>
+            <p>Biofilia es una red de colaboración conformada
+              por museos, universidades, centros de ciencia e
+              instituciones dedicadas a la divulgación del
+              conocimiento natural en Colombia. Su objetivo es
+              fortalecer el aprendizaje, la investigación y la
+              conexión de las personas con la biodiversidad del
+              país mediante experiencias educativas, científicas
               y culturales.</p>
             <ButtonLink title="Conoce más" link="https://example.com" />
           </div>
-          <div className="Alianza-Biofilia-Image"></div>
+          <div className="Info-Image">
+            <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia"/>
+          </div>
         </section>
-        <section className="Nuestro-Proyecto">
-          <div className="Nuestro-Proyecto-Text">
+        <section className="Info">
+          <div className="Info-Image">
+            <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia"/>
+          </div>
+          <div className="Info-Text">
             <br/><br/><br/><br/>
             <h4>Nuestro Proyecto</h4>
             <p>Guardianes del paleoceno es una experiencia educativa<br/>
@@ -45,9 +54,10 @@ function HomePage() {
               </p>
             <ButtonLink title="Conoce más" link="https://example.com" />
           </div>
-          <div className="Alianza-Biofilia-Image"></div>
+          
         </section>
-      </header>
+      </div>
+      
     </div>
   );
 }
