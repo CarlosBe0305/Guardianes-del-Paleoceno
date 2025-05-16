@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles/ButtonLink.css';
 
-function ButtonLink({ title, link }) {
+function ButtonLink({ children, ...props }) {
   return (
-    <a href={link} className="button-link">
-      {title}
-    </a>
+    <button {...props} className="button-link">
+      {children}
+    </button>
   );
 }
 

@@ -9,13 +9,19 @@ function NavFAB() {
   return (
     <Navbar expand="lg" >
       <Container fluid className="fixed-top">
-        <Navbar.Brand href="#home"></Navbar.Brand>
+        <Navbar.Brand href="#home" className="navbar-logo">
+          <img
+            src="/images/Icono Biofilia.svg"
+            alt="Biofilia Logo"
+            style={{ height: "55px", width: "auto" }}
+          />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto pe-3 navfab">
             <Nav.Link href="#home">Biofilia</Nav.Link>
             <Nav.Link href="#link">Nuestro Proyecto</Nav.Link>
-            <Nav.Link href="#link">El Proceso</Nav.Link>
+            <Nav.Link href="#link2">El Proceso</Nav.Link>
             <NavDropdown title="Experiencias" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -27,8 +33,7 @@ function NavFAB() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link">Sobre Nosotros</Nav.Link>
-            
+            <Nav.Link href="#link3">Sobre Nosotros</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

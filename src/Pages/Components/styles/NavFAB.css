@@ -1,4 +1,3 @@
-
 .navbar {
     width: 100%;
     height: 45vh;
@@ -16,6 +15,18 @@
     font-size: 0.8em;
     font-weight: bold;
 }
+.nav-link:active, .nav-link:hover{
+    color: #DFE1AE;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #04382B;
+}
 .fixed-top{
     top: 5%;
+}
+
+/* NavFAB.css */
+.navbar-logo {
+  margin-left: 20px; /* Ajusta el valor según lo que necesites */
 }
