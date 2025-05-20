@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './HomePage.css';
-import './Components/styles/NavFAB.css';
 import ButtonLink from './Components/ButtonLink';
 
 function HomePage() {
@@ -48,12 +47,95 @@ function HomePage() {
               universidades, centros de ciencia e instituciones dedicadas a la
               divulgación del conocimiento natural en Colombia.
             </p>
-            <ButtonLink>Más Información</ButtonLink>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <ButtonLink>Más Información</ButtonLink>
+            </div>
           </div>
           <div className="Info-Image">
             <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
             
           </div>
+        </section>
+        <section className="Info">
+          <div className="Info-Image">
+            <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
+            
+          </div>
+          <div className="Info-Text">
+            <h4>Nuestro Proyecto</h4>
+            <p>
+              Guardianes del paleoceno es una experiencia educativa inmersiva pensada
+              para niñas y niños entre los 7 y 10 años, que los invita a conocer el
+              Paleoceno una era fascinante posterior a la extinción de los dinosaurios
+              a través de una serie de estaciones interactivas y narrativas. El objetivo
+              es despertar la curiosidad científica desde la infancia mediante el juego,
+              la exploración táctil y la imaginación, permitiendo que el aprendizaje surja
+              de manera natural y memorable mientras recorren el ecosistema prehistórico
+              guiados por un personaje lúdico.
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <ButtonLink>Más Información</ButtonLink>
+            </div>
+          </div>
+          
+        </section>
+        <section className="Info">
+          <div className="Info-Text">
+            <h4>El Proceso</h4>
+            <p>
+              El diseño de Biofilia fue el resultado de un proceso riguroso que combinó
+              investigación académica, prototipado iterativo, pruebas con usuarios reales
+              y colaboración con expertos en educación y ciencias naturales. A través de
+              varias fases desde la ideación hasta la validación en campo fuimos afinando
+              las actividades, el contenido visual y las estrategias pedagógicas. <br />
+              Esta sección presenta cómo cada etapa del proceso contribuyó a construir
+              una experiencia significativa, alineada con los intereses y capacidades
+              cognitivas de los niños y niñas.
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <ButtonLink>Más Información</ButtonLink>
+            </div>
+          </div>
+          
+        </section>
+        <section className="Info">
+          <div className="Info-Text">
+            <h4>Prototipos</h4>
+            <p>
+              En Biofilia desarrollamos una serie de estaciones interactivas que permiten
+              a los participantes tocar, observar, deducir y construir conocimiento a
+              partir de la experiencia directa. Estas incluyen un escáner digital de
+              fósiles, un rompecabezas de arcilla con impresiones reales, una línea de
+              tiempo táctil para ubicar eventos  históricos, y una bitácora de exploración
+              que guía toda la experiencia. Cada prototipo fue validado con niños y adaptado
+              para lograr un equilibrio entre diversión, comprensión y participación activa. 
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <ButtonLink>Más Información</ButtonLink>
+            </div>
+          </div>
+          <div className="Info-Image">
+            <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
+            
+          </div>
+        </section>
+        <section className="Info">
+          <div className="Info-Text">
+            <h4>Sobre Nosotros</h4>
+            <p>
+              Somos un equipo de estudiantes y profesionales de diseño, unidos por la
+              convicción de que aprender puede y debe ser una experiencia emocionante.
+              A través de Biofilia, nos propusimos acercar a los más pequeños al
+              conocimiento científico desde una perspectiva sensible, visual y
+              participativa. Creemos que sembrar la curiosidad desde edades tempranas
+              es clave para formar futuras generaciones con pensamiento crítico, amor
+              por el entorno natural y capacidad para imaginar otros mundos posibles.
+            </p>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <ButtonLink>Más Información</ButtonLink>
+            </div>
+          </div>
+          
         </section>
       </div>
     </div>
