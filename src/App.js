@@ -7,8 +7,8 @@ import Biofilia from './Pages/Biofilia';
 function App() {
   return (
     <div className="App">
-      <NavFAB />
       <Router>
+        <NavFAB />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/Biofilia" element={<Biofilia />} />

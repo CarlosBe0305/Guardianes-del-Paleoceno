@@ -24,13 +24,15 @@
   color: white;
 }
 .Title {
-  position: absolute; /* Posición inicial */
-  z-index: 1; /* Asegura que esté por encima de otros elementos */
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  z-index: 100;
   color: #04382B;
-  top: 130px; /* Posición inicial */
-  left: 50%; /* Centra horizontalmente en la posición inicial */
-  transform: translateX(-50%) scale(1); /* Ajusta el centrado horizontal y escala inicial */
-  transition: all 0.1s ease; /* Suaviza el cambio de posición y escala */
+  text-decoration: none;
+  transition: 
+    top 0.3s, left 0.3s, transform 0.3s;
 }
   h1, h3 {
     display: inline;
@@ -103,4 +105,5 @@ section{
   padding-top: 0;     /* Elimina padding superior */
   /* Si quieres que quede aún más arriba, puedes usar: */
   position: relative; top: -60px;
+  z-index: 1;
 }

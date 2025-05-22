@@ -4,18 +4,33 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/NavFAB.css';
+import { useLocation } from 'react-router-dom';
 
 function NavFAB() {
+  const location = useLocation();
+
   return (
+    <div className="App-Header">
+    <div className="Banner">
+      </div>
     <Navbar expand="lg" >
       <Container fluid className="fixed-top">
-        <Navbar.Brand href="/" className="navbar-logo">
-          <img
-            src="/images/Icono Biofilia.svg"
-            alt="Biofilia Logo"
-            style={{ height: "55px", width: "auto" }}
-          />
-        </Navbar.Brand>
+        {location.pathname !== "/Biofilia" && (
+          <Navbar.Brand href="/" className="navbar-logo">
+            <img
+              src="/Images/Icono Biofilia.svg"
+              alt="Biofilia Logo"
+              style={{ height: "55px", width: "auto" }}
+            />
+          </Navbar.Brand>
+        )}
+        {location.pathname !== "/" && location.pathname !== "/Biofilia" && (
+          <Navbar.Brand href="/" className="navbar-Title">
+            <h2>Guardianes</h2>
+            <h3>del </h3>
+            <h1>PALEOCENO</h1>
+          </Navbar.Brand>
+        )}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto pe-3 navfab">
@@ -38,6 +53,8 @@ function NavFAB() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
+    
   );
 }
 

@@ -4,38 +4,41 @@ import ButtonLink from './Components/ButtonLink';
 
 function HomePage() {
   useEffect(() => {
+    const titleElement = document.querySelector('.Title');
     const handleScroll = () => {
-      const titleElement = document.querySelector('.Title');
       const scrollY = window.scrollY;
+      const maxScroll = 300; // Ajusta según lo que necesites
+      const progress = Math.min(scrollY / maxScroll, 1);
 
-      // Calcula la posición en función del scroll
-      const topPosition = Math.max(-7, 130 - scrollY * 0.5); // Más cerca del borde superior
-      const leftPosition = Math.max(4, 50 - scrollY * 0.15);
+      // Interpolación de valores
+      const top = 130 - (137 * progress); // de 130px a -7px
+      const left = 50 - (46 * progress);  // de 50% a 4%
+      const scale = 1 - (0.6 * progress); // de 1 a 0.4
+      const translateX = 50 - (50 * progress); // de -50% a 0%
 
-      // Calcula la escala en función del scroll
-      const scaleValue = Math.max(0.4, 1 - scrollY * 0.003);
-
-      // Aplica las nuevas posiciones y escala
       titleElement.style.position = 'fixed';
-      titleElement.style.top = `${topPosition}px`;
-      titleElement.style.left = `${leftPosition}%`;
-      titleElement.style.transform = `translateX(-${Math.max(50 - scrollY * 0.5, 0)}%) scale(${scaleValue})`;
+      titleElement.style.top = `${top}px`;
+      titleElement.style.left = `${left}%`;
+      titleElement.style.transform = `translateX(-${translateX}%) scale(${scale})`;
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Ejecuta una vez al montar
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <div className="App">
       <header className="App-header">
+       
         <div className="Title">
           <h2>Guardianes</h2>
           <h3>del </h3>
           <h1>PALEOCENO</h1>
         </div>
         <div className="Dinosaurios-Image">
-          <img src="/images/Dinosaurios.png" alt="Dinosaurios" />
+          <img src="/Images/Dinosaurios.png" alt="Dinosaurios" />
         </div>
       </header>
       <div className="App-body">
@@ -52,13 +55,13 @@ function HomePage() {
             </div>
           </div>
           <div className="Info-Image">
-            <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
+            <img src="/Images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
             
           </div>
         </section>
         <section className="Info">
           <div className="Info-Image">
-            <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
+            <img src="/Images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
             
           </div>
           <div className="Info-Text">
@@ -115,7 +118,7 @@ function HomePage() {
             </div>
           </div>
           <div className="Info-Image">
-            <img src="/images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
+            <img src="/Images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
             
           </div>
         </section>

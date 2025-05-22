@@ -1,8 +1,17 @@
 .navbar {
     width: 100%;
+    z-index: 100;
+}
+.App-Header {
+    height: 100%;
+    width: 100%;
+}
+.Banner {
     height: 45vh;
     background-color: #DFE1AE;
-    z-index: 0;
+    z-index: 1;
+    position: relative;
+    width: 100%;
 }
 .navfab {
     background-color: #04382b93;
@@ -23,10 +32,22 @@
     color: #04382B;
 }
 .fixed-top{
+    position: fixed;
     top: 5%;
+    z-index: 100;
 }
 
 /* NavFAB.css */
 .navbar-logo {
   margin-left: 20px; /* Ajusta el valor según lo que necesites */
+}
+
+.navbar-Title{
+    position: fixed;
+    top: 0.6%;
+    left: 8%;
+    z-index: 100;
+    color: #04382B;
+    text-decoration: none;
+    transform: translateX(0) scale(0.5);
 }
