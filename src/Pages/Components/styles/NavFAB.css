@@ -17,7 +17,8 @@
     background-color: #04382b93;
     padding: 0% 2%;
     border-radius: 50px;
-    z-index:10;
+    z-index: 10;
+    margin-right: 25px; /* <-- Ajusta este valor según lo que necesites */
 }
 .nav-link {
     color: white;

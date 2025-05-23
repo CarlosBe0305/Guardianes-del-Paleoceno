@@ -32,7 +32,7 @@ function NavFAB() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto pe-3 navfab">
-            <Nav.Link href="/Biofilia">Biofilia</Nav.Link>
+            <Nav.Link href="/#Biofilia">Biofilia</Nav.Link>
             <Nav.Link href="/#proyecto">Nuestro Proyecto</Nav.Link>
             <Nav.Link href="/#proceso">El Proceso</Nav.Link>
             <NavDropdown title="Experiencias" id="basic-nav-dropdown">

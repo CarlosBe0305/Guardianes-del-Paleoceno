@@ -2,10 +2,6 @@
   color: white;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +24,11 @@
 .App-body{
   background-color: #FFF4E2;
   position: relative;
-  top: 100px;
   overflow: hidden;
+  top: -20px;
 }
 .App-header{
-  
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,12 +39,12 @@
   position: absolute;
   top: 130px;
   left: 50%;
-  transform: translateX(-50%) scale(1);
+  transform: translateX(-60%) scale(1);
   z-index: 100;
   color: #04382B;
   text-decoration: none;
   transition: 
-    top 0.3s, left 0.3s, transform 0.3s;
+    top 0.3s, left 0.s, transform 0.3s;
 }
   h1, h3 {
     display: inline;
@@ -90,7 +86,6 @@ section{
   gap: 20px; /* Espacio entre los elementos */
   margin: 5%; /* Margen alrededor del contenedor */
   position: relative; /* Posiciona el contenedor */
-  top: -150px; /* Posición inicial */
 }
 
 
@@ -172,9 +167,11 @@ section{
 .Dinosaurios-Image {
   margin-top: 0;      /* Elimina margen superior */
   padding-top: 0;     /* Elimina padding superior */
-  /* Si quieres que quede aún más arriba, puedes usar: */
-  position: relative; top: -100px;
-  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 .Proceso{
   background-color: #fece76;
@@ -205,4 +202,13 @@ section{
   height: auto;
   left: 0;
   top: 180px;
+}
+
+#Biofilia {
+  padding-top: 180px; /* Solo la primera sección lo necesita */
+}
+
+/* Solo elimina el margen superior en la primera sección */
+.Info:first-of-type {
+  margin-top: 0;
 }

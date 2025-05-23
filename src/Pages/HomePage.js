@@ -6,16 +6,31 @@ import ButtonLink from './Components/ButtonLink';
 function HomePage() {
   const location = useLocation();
 
+  // Scroll al montar
   useEffect(() => {
-    if (location.hash) {
+    setTimeout(() => {
+      if (window.location.hash && window.location.hash !== "#Biofilia") {
+        const yOffset = -150;
+        const el = document.querySelector(window.location.hash);
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }
+    }, 100);
+  }, []);
+
+  // Scroll cuando cambia el hash
+  useEffect(() => {
+    if (location.hash && location.hash !== "#Biofilia") {
       setTimeout(() => {
-        const yOffset = -150; // Ajusta según la altura de tu navbar
+        const yOffset = -150;
         const el = document.querySelector(location.hash);
         if (el) {
           const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }
-      }, 100); // Espera 100ms para asegurar que el DOM esté listo
+      }, 100);
     }
   }, [location]);
 
@@ -28,7 +43,18 @@ function HomePage() {
 
       // Interpolación de valores
       const top = 130 - (137 * progress); // de 130px a -7px
-      const left = 50 - (46 * progress);  // de 50% a 4%
+      const width = window.innerWidth;
+      let leftEnd;
+      if (width <= 600) {
+        leftEnd = 22; // móvil
+      } else if (width <= 1000) {
+        leftEnd = 13; // tablet
+      } else if (width <= 1500) {
+        leftEnd = 6; // laptop
+      } else {
+        leftEnd = 4; // desktop grande
+      }
+      const left = 50 - ((50 - leftEnd) * progress);  // de 50% a 4%
       const scale = 1 - (0.6 * progress); // de 1 a 0.4
       const translateX = 50 - (50 * progress); // de -50% a 0%
 
@@ -48,7 +74,7 @@ function HomePage() {
     <div className="App">
       <header className="App-header">
         <div className="Banner-Home">
-              </div>
+        </div>
         <div className="Title">
           <h2>Guardianes</h2>
           <h3>del </h3>
@@ -59,7 +85,7 @@ function HomePage() {
         </div>
       </header>
       <div className="App-body">
-        <section className="Info" id="alianza-biofilia">
+        <section className="Info" id="Biofilia">
           <div className="Info-Text">
             <h4>Alianza Biofilia</h4>
             <p>
@@ -68,7 +94,9 @@ function HomePage() {
               divulgación del conocimiento natural en Colombia.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <ButtonLink>Más Información</ButtonLink>
+              <ButtonLink href="https://www.alianzabiofilia.co/" target="_blank" rel="noopener noreferrer">
+                Más Información
+              </ButtonLink>
             </div>
           </div>
           <div className="Info-Image">
@@ -99,9 +127,9 @@ function HomePage() {
           </div>
 
         </section>
-        
+
         <section className="Info Proceso" id="proceso">
-          <img className= "Decorativo1" src="/Images/Decorativo 1.png" alt="Alianza Biofilia" />
+          <img className="Decorativo1" src="/Images/Decorativo 1.png" alt="Alianza Biofilia" />
 
           <div className="Info-Text">
             <h4>El Proceso</h4>
@@ -143,13 +171,13 @@ function HomePage() {
             <img className="fossil-small1" src="/Images/Fósil 1.png" alt="Fósil grande" />
             <img className="fossil-main" src="/Images/Fósil 2.png" alt="Fósil pequeño 1" />
             <img className="fossil-small2" src="/Images/Fósil 3.png" alt="Fósil pequeño 2" />
-                      </div>
+          </div>
         </section>
-         
+
         <section className="Info SobreNosotros" id="sobre-nosotros">
-         
+
           <div className="Info-Text">
-            
+
             <h4>Sobre Nosotros</h4>
             <p>
               Somos un equipo de estudiantes y profesionales de diseño, unidos por la
