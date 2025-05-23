@@ -99,7 +99,10 @@ function HomePage() {
           </div>
 
         </section>
+        
         <section className="Info Proceso" id="proceso">
+          <img className= "Decorativo1" src="/Images/Decorativo 1.png" alt="Alianza Biofilia" />
+
           <div className="Info-Text">
             <h4>El Proceso</h4>
             <p>
@@ -118,6 +121,8 @@ function HomePage() {
           </div>
 
         </section>
+        <img className="lineas-decoracion-1" src="/Images/Líneas Decoración - 1.png" alt="Fósil pequeño 2" />
+
         <section className="Info">
           <div className="Info-Text">
             <h4>Prototipos</h4>
@@ -140,10 +145,11 @@ function HomePage() {
             <img className="fossil-small2" src="/Images/Fósil 3.png" alt="Fósil pequeño 2" />
                       </div>
         </section>
+         
         <section className="Info SobreNosotros" id="sobre-nosotros">
+         
           <div className="Info-Text">
-            <img className="lineas-decoracion-1" src="/Images/Líneas Decoración - 1.png" alt="Fósil pequeño 2" />
-
+            
             <h4>Sobre Nosotros</h4>
             <p>
               Somos un equipo de estudiantes y profesionales de diseño, unidos por la

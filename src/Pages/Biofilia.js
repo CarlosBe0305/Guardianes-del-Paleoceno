@@ -67,6 +67,15 @@ function Biofilia() {
           <h1>PALEOCENO</h1>
         </Link>
       </header>
+      <div className="body">
+        <section className="Info" id="alianza-biofilia">
+          <div className="Info-Text">
+            <h4>¿Qué es Biofilia?</h4>
+            <p>Somos ocho entidades dedicadas a investigar y promover la conservación de la vida, que nos unimos con el interés de despertar en el país un genuino afecto por lo vivo. Somos Alianza Biofilia.
+Escuchamos el llamado de la ciencia, las organizaciones y las comunidades para tomar las medidas necesarias y permitir la recuperación, la regeneración y la conservación de todo aquello que sostiene la vida en todas sus formas y manifestaciones.</p>
+          </div>
+        </section>
+        </div>
     </div>
   );
 }

@@ -9,11 +9,17 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100vw;
 }
 
 .App-body{
   position: relative;
   top: 100px;
+}
+.body{
+  margin-top: 60vh;
+  background-color: #FFF4E2;
+  width: 100vw;
 }
 .App-header{
   
@@ -30,6 +36,55 @@
     top: 0px;
     position: absolute;
     width: 100vw;
+}
+ h1, h3 {
+    display: inline;
+  }
+  h1 {
+    font-size: 3em;
+    font-weight:1000;
+    position: relative;
+    top: -20px;
+    padding: 0;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: 800;
+    
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 900;
+    position: relative;
+    top: -20px;
+  }
+  h4 {
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: center;
+  }
+section{
+  color: #04382B;
+  text-align: left;
+  z-index: 1;
+}
+
+.Info {
+  display: flex; /* Activa Flexbox */
+  align-items: stretch; /* Estira los elementos hijos para que tengan la misma altura */
+  justify-content: space-between; /* Mantiene separación horizontal entre texto e imagen */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una fila */
+  gap: 20px; /* Espacio entre los elementos */
+  margin: 5%; /* Margen alrededor del contenedor */
+  position: relative; /* Posiciona el contenedor */
+  top: -150px; /* Posición inicial */
+}
+
+
+.Info-Text {
+  flex: 1; /* El texto ocupará el espacio disponible */
+  padding: 20px; /* Espacio interno */
+  text-align: center; /* Alinea el texto a la izquierda */
 }
 .Logo{
   position: fixed;
