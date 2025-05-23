@@ -1,8 +1,24 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import './HomePage.css';
 import ButtonLink from './Components/ButtonLink';
 
 function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const yOffset = -150; // Ajusta según la altura de tu navbar
+        const el = document.querySelector(location.hash);
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+      }, 100); // Espera 100ms para asegurar que el DOM esté listo
+    }
+  }, [location]);
+
   useEffect(() => {
     const titleElement = document.querySelector('.Title');
     const handleScroll = () => {
