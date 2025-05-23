@@ -33,8 +33,8 @@ function NavFAB() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto pe-3 navfab">
             <Nav.Link href="/Biofilia">Biofilia</Nav.Link>
-            <Nav.Link href="#link">Nuestro Proyecto</Nav.Link>
-            <Nav.Link href="#link2">El Proceso</Nav.Link>
+            <Nav.Link href="/#proyecto">Nuestro Proyecto</Nav.Link>
+            <Nav.Link href="/#proceso">El Proceso</Nav.Link>
             <NavDropdown title="Experiencias" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -46,7 +46,7 @@ function NavFAB() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link3">Sobre Nosotros</Nav.Link>
+            <Nav.Link href="/#sobre-nosotros">Sobre Nosotros</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

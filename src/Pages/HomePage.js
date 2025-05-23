@@ -43,7 +43,7 @@ function HomePage() {
         </div>
       </header>
       <div className="App-body">
-        <section className="Info">
+        <section className="Info" id="alianza-biofilia">
           <div className="Info-Text">
             <h4>Alianza Biofilia</h4>
             <p>
@@ -60,7 +60,7 @@ function HomePage() {
 
           </div>
         </section>
-        <section className="Info">
+        <section className="Info" id="proyecto">
           <div className="Info-Image">
             <img src="/Images/DinoPablo.png" alt="Alianza Biofilia" />
 
@@ -83,7 +83,7 @@ function HomePage() {
           </div>
 
         </section>
-        <section className="Info Proceso">
+        <section className="Info Proceso" id="proceso">
           <div className="Info-Text">
             <h4>El Proceso</h4>
             <p>
@@ -124,7 +124,7 @@ function HomePage() {
             <img className="fossil-small2" src="/Images/Fósil 3.png" alt="Fósil pequeño 2" />
                       </div>
         </section>
-        <section className="Info SobreNosotros">
+        <section className="Info SobreNosotros" id="sobre-nosotros">
           <div className="Info-Text">
             <img className="lineas-decoracion-1" src="/Images/Líneas Decoración - 1.png" alt="Fósil pequeño 2" />
 
