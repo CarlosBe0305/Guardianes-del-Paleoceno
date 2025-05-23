@@ -12,7 +12,7 @@ function NavFAB() {
   return (
     <div className="App-Header">
     <div className="Banner">
-      </div>
+              </div>
     <Navbar expand="lg" >
       <Container fluid className="fixed-top">
         {location.pathname !== "/Biofilia" && (

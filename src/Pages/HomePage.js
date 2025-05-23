@@ -31,7 +31,8 @@ function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
-       
+        <div className="Banner">
+              </div>
         <div className="Title">
           <h2>Guardianes</h2>
           <h3>del </h3>
@@ -56,13 +57,13 @@ function HomePage() {
           </div>
           <div className="Info-Image">
             <img src="/Images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
-            
+
           </div>
         </section>
         <section className="Info">
           <div className="Info-Image">
-            <img src="/Images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
-            
+            <img src="/Images/DinoPablo.png" alt="Alianza Biofilia" />
+
           </div>
           <div className="Info-Text">
             <h4>Nuestro Proyecto</h4>
@@ -80,9 +81,9 @@ function HomePage() {
               <ButtonLink>Más Información</ButtonLink>
             </div>
           </div>
-          
+
         </section>
-        <section className="Info">
+        <section className="Info Proceso">
           <div className="Info-Text">
             <h4>El Proceso</h4>
             <p>
@@ -99,7 +100,7 @@ function HomePage() {
               <ButtonLink>Más Información</ButtonLink>
             </div>
           </div>
-          
+
         </section>
         <section className="Info">
           <div className="Info-Text">
@@ -111,19 +112,22 @@ function HomePage() {
               fósiles, un rompecabezas de arcilla con impresiones reales, una línea de
               tiempo táctil para ubicar eventos  históricos, y una bitácora de exploración
               que guía toda la experiencia. Cada prototipo fue validado con niños y adaptado
-              para lograr un equilibrio entre diversión, comprensión y participación activa. 
+              para lograr un equilibrio entre diversión, comprensión y participación activa.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <ButtonLink>Más Información</ButtonLink>
             </div>
           </div>
-          <div className="Info-Image">
-            <img src="/Images/Alianza-Biofilia.jpeg" alt="Alianza Biofilia" />
-            
-          </div>
+          <div className="Info-Image fossil-group">
+            <img className="fossil-small1" src="/Images/Fósil 1.png" alt="Fósil grande" />
+            <img className="fossil-main" src="/Images/Fósil 2.png" alt="Fósil pequeño 1" />
+            <img className="fossil-small2" src="/Images/Fósil 3.png" alt="Fósil pequeño 2" />
+                      </div>
         </section>
-        <section className="Info">
+        <section className="Info SobreNosotros">
           <div className="Info-Text">
+            <img className="lineas-decoracion-1" src="/Images/Líneas Decoración - 1.png" alt="Fósil pequeño 2" />
+
             <h4>Sobre Nosotros</h4>
             <p>
               Somos un equipo de estudiantes y profesionales de diseño, unidos por la
@@ -137,8 +141,9 @@ function HomePage() {
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <ButtonLink>Más Información</ButtonLink>
             </div>
+            <img className="Herramienta" src="/Images/Herramienta.png" alt="Herramienta" />
           </div>
-          
+
         </section>
       </div>
     </div>

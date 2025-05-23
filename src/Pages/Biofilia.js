@@ -10,7 +10,7 @@ function Biofilia() {
 
     // Función de rebote tipo "easeOutBack"
     function easeOutBack(x) {
-      const c1 = 4; // <--- Más grande para más rebote
+      const c1 = 2; // Prueba con 1.5, 2 o 2.5
       const c3 = c1 + 1;
       return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2);
     }
@@ -34,7 +34,7 @@ function Biofilia() {
       logoElement.style.width = `${minWidth + (maxWidth - minWidth) * progress}px`;
 
       // Animación del Title (con rebote)
-      const leftStart = -6;   // % (inicio, más a la izquierda)
+      const leftStart = -10;   // % (inicio, más a la izquierda)
       const leftEnd = 4;      // % (posición final, donde debe terminar)
       const bounceProgress = easeOutBack(progress);
       const left = leftStart + (leftEnd - leftStart) * bounceProgress;

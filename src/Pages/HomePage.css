@@ -1,5 +1,4 @@
 .App{
-  background-color: #FFF4E2;
   color: white;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
@@ -10,8 +9,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.Banner {
+    height: 50vh;
+    background-color: #DFE1AE;
+    z-index: 1;
+    top: -15px;
+    position: relative;
+    width: 100vw;
+}
 .App-body{
+  background-color: #FFF4E2;
   position: relative;
   top: 100px;
 }
@@ -91,19 +98,95 @@ section{
   justify-content: center; /* Centra la imagen horizontalmente */
 }
 
-.Info-Image img {
-  max-height: 100%; /* La imagen no será más alta que el contenedor */
-  max-width: 90%; /* Limita el ancho máximo de la imagen */
-  width: auto; /* Mantiene la proporción de la imagen */
-  height: auto; /* Ajusta la altura automáticamente */
-  display: block; /* Elimina espacio extra alrededor de la imagen */
-  object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
+/* Solo para la sección de Prototipos */
+.Info-Image.fossil-group {
+  position: relative;
+  z-index: auto; /* o elimina el z-index aquí */
+}
+
+.fossil-main {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 90%;
+  z-index: 2;
+}
+
+.fossil-small1 {
+  position: absolute;
+  top: -30px;
+  right: 20px;
+  width: 30%;
+  z-index: 3;
+}
+
+.fossil-small2 {
+  position: absolute;
+  bottom: -20px;
+  right: 70%;
+  width: 30%;
+  z-index: 1;
+}
+
+.lineas-decoracion-1 {
+  position: absolute;
+  top: -300px;
+  right: -150px;
+  width: 35%;
+  z-index: 1000; /* mucho mayor */
+}
+
+/* Solo aplica a las imágenes que NO son fósiles */
+.Info-Image:not(.fossil-group) img {
+  max-height: 100%;
+  max-width: 90%;
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Las imágenes de fósiles ya tienen su propio tamaño y posición */
+.fossil-main,
+.fossil-small1,
+.fossil-small2,
+.lineas-decoracion-1 {
+  max-width: none;
+  max-height: none;
+  display: block;
+  position: absolute;
 }
 
 .Dinosaurios-Image {
   margin-top: 0;      /* Elimina margen superior */
   padding-top: 0;     /* Elimina padding superior */
   /* Si quieres que quede aún más arriba, puedes usar: */
-  position: relative; top: -60px;
+  position: relative; top: -100px;
   z-index: 1;
+}
+.Proceso{
+  background-color: #fece76;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.Proceso .Info-Text{
+  text-align: center;
+}
+
+.SobreNosotros{
+  background-color: #cb9b69;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.SobreNosotros .Info-Text{
+  text-align: center;
+}
+.Herramienta{
+  position: absolute;
+  width: 30%;
+  height: auto;
+  left: 0;
+  top: 180px;
 }

@@ -6,13 +6,7 @@
     height: 100%;
     width: 100%;
 }
-.Banner {
-    height: 45vh;
-    background-color: #DFE1AE;
-    z-index: 1;
-    position: relative;
-    width: 100%;
-}
+
 .navfab {
     background-color: #04382b93;
     padding: 0% 2%;

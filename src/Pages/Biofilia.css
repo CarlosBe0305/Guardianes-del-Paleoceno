@@ -23,6 +23,14 @@
   justify-content: center;
   color: white;
 }
+.Banner {
+    height: 50vh;
+    background-color: #f4c5e7;
+    z-index: 1;
+    top: -15px;
+    position: relative;
+    width: 100vw;
+}
 .Logo{
   position: fixed;
   z-index: 100;
