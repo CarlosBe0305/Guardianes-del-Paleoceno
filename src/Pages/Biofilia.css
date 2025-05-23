@@ -23,12 +23,12 @@
   justify-content: center;
   color: white;
 }
-.Banner {
+.Banner-Biofilia {
     height: 50vh;
     background-color: #f4c5e7;
     z-index: 1;
-    top: -15px;
-    position: relative;
+    top: 0px;
+    position: absolute;
     width: 100vw;
 }
 .Logo{

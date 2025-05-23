@@ -31,7 +31,7 @@ function HomePage() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="Banner">
+        <div className="Banner-Home">
               </div>
         <div className="Title">
           <h2>Guardianes</h2>

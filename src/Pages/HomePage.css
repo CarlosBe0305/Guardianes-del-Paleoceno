@@ -9,7 +9,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.Banner {
+.Banner-Home {
     height: 50vh;
     background-color: #DFE1AE;
     z-index: 1;

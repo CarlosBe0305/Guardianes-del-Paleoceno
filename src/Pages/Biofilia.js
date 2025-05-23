@@ -53,6 +53,8 @@ function Biofilia() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="Banner-Biofilia">
+              </div>
         <div className="Logo">
           <img
             src="/Images/Icono Biofilia.svg"
