@@ -30,14 +30,14 @@ function LineaTiempo() {
             <div className="container">
                 <div className="row">
                     <div>
-                        <p>En esta sección podrás ver la línea de tiempo de los eventos más importantes del Paleoceno.</p>
+                        <p>En esta sección podrás ver la historia de fósiles de plantas prehistóricas.</p>
                     </div>
                     <div className="scroll-x-img" ref={scrollImgRef}>
                         <img src="/Images/Linea del tiempo.png" alt="Línea de tiempo" className="img-LineaTiempo" />
                         <div className="overlay-linea">
-                            <button className="overlay-btn" onClick={handleFullscreen}>
-                                Ver detalle
-                            </button>
+                            <ButtonLink className="overlay-btn" onClick={handleFullscreen}>
+                              Ver en pantalla completa
+                            </ButtonLink>
                         </div>
                     </div>
                 </div>
