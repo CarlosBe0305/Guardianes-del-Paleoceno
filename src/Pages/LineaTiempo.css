@@ -1,0 +1,90 @@
+.Banner-Linea{
+    height: 40vh;
+    background-color: #aed0e1;
+    z-index: 1;
+    top: -15px;
+    position: relative;
+    width: 100vw;
+}
+.row{
+    text-align: center;
+}
+.LineaTiempo{
+    background-color: #FFF4E2;
+    color: #04382b;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    top: -20px;
+}
+.scroll-x-img {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 79vw;
+  height: 90vh;
+  white-space: nowrap;
+  position: relative;
+    margin: 0 auto;
+}
+
+.img-LineaTiempo {
+  display: block;
+  height: calc(90vh * 2652 / 1730); /* Escala para que 1730px = 100vh */
+  width: auto;                       /* Mantiene la proporción */
+  min-width: 0;
+  max-width: none;
+}
+
+.scroll-x-img {
+  position: relative;
+}
+
+.overlay-linea {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.scroll-x-img:hover .overlay-linea {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.overlay-btn {
+  background: #fff;
+  color: #222;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.2s, color 0.2s;
+}
+
+.overlay-btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+.scroll-x-img:fullscreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  background: #000;
+  z-index: 9999;
+}
+
+.scroll-x-img:fullscreen .img-LineaTiempo {
+  height: calc(100vh * 2652 / 1730); /* Escala para que 1730px = 100vh en fullscreen */
+}
+
+.scroll-x-img:fullscreen .overlay-linea {
+  display: none !important;
+}
