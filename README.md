@@ -87,6 +87,21 @@ Para más información, preguntas o sugerencias, por favor contacta a:
 
 ---
 
+## Autores
+
+**Equipo de trabajo:**
+
+- Pablo Agudelo Lince
+- Mariana Álvarez Bustamante
+- Maria Alejandra Arias Olarte
+- Carlos Alejandro Benítez Hoyos
+- Susana Gómez Serna
+- Mariana Gutiérrez Ruiz
+- Sara Quintero Giraldo
+- Sofía Saldarriaga Velásquez
+
+---
+
 ## Agradecimientos
 
 - Agradecimientos especiales a la Universidad EAFIT por su apoyo en el desarrollo de este proyecto.
@@ -94,118 +109,3 @@ Para más información, preguntas o sugerencias, por favor contacta a:
 - Y a todos los colaboradores que hicieron posible este proyecto.
 
 ---
-
-## Demo
-
-Puedes ver una demo en vivo de la aplicación aquí: [Demo en vivo](https://tu-demo-en-vivo.com)
-
----
-
-## Tecnologías Utilizadas
-
-- React
-- Redux
-- React Router
-- Axios
-- Sass
-
----
-
-## Estado del Proyecto
-
-El proyecto está actualmente en desarrollo activo. Consulta la sección de [Issues](https://github.com/tu-usuario/guardianes-paleoceno/issues) para ver las características pendientes y los errores conocidos.
-
----
-
-## Notas
-
-- Asegúrate de tener instalada la última versión de Node.js y npm.
-- Para un mejor rendimiento, se recomienda usar un navegador moderno y actualizado.
-
----
-
-## Changelog
-
-Consulta el archivo [CHANGELOG.md](CHANGELOG.md) para ver el historial de cambios y actualizaciones del proyecto.
-
----
-
-## Roadmap
-
-Las siguientes características y mejoras están planeadas para futuras versiones:
-
-- [ ] Añadir más estaciones interactivas.
-- [ ] Incluir un sistema de recompensas y logros.
-- [ ] Mejorar la accesibilidad y la compatibilidad con dispositivos móviles.
-
----
-
-## Capturas de Pantalla
-
-Aquí hay algunas capturas de pantalla de la aplicación:
-
-![Pantalla de inicio](public/screenshots/01-pantalla-inicio.png)
-![Estación interactiva](public/screenshots/02-estacion-interactiva.png)
-![Página de recursos](public/screenshots/03-pagina-recursos.png)
-
----
-
-## Vídeo Demostrativo
-
-Mira este vídeo para una demostración rápida de la aplicación: [Vídeo Demostrativo](https://tu-video-demostrativo.com)
-
----
-
-## FAQ
-
-**P: ¿Es gratis usar esta aplicación?**\
-R: Sí, la aplicación es completamente gratuita para fines educativos.
-
-**P: ¿Puedo usar esto en mi escuela?**\
-R: ¡Por supuesto! Anima a tus profesores y compañeros a explorar el fascinante mundo de la paleobotánica.
-
-**P: ¿Cómo puedo contribuir al proyecto?**\
-R: Consulta la sección de contribución arriba para más detalles sobre cómo puedes ayudar.
-
----
-
-## Testimonios
-
-"Una herramienta increíble para introducir a los niños en la ciencia y la historia natural." - **Dr. Juan Pérez, Paleontólogo**
-
-"Mis hijos se divierten mucho aprendiendo sobre los fósiles y el Paleoceno. ¡Gracias!" - **Ana Gómez, Madre y Educadora**
-
----
-
-## Recursos Adicionales
-
-- [Guía de uso para educadores](docs/guia-educadores.pdf)
-- [Artículos y estudios sobre paleobotánica](docs/articulos-paleobotanica.pdf)
-- [Enlaces a museos y exposiciones virtuales](docs/enlaces-museos.pdf)
-
----
-
-## Soporte
-
-Si encuentras algún problema o tienes preguntas, por favor abre un issue en el repositorio o contacta a los mantenedores del proyecto.
-
----
-
-## Créditos
-
-- **Desarrolladores:** Tu Nombre, Colaborador 1, Colaborador 2
-- **Diseñadores:** Diseñador 1, Diseñador 2
-- **Asesores:** Dr. Juan Pérez, Dra. Ana López
-
----
-
-## Glosario
-
-- **Paleoceno:** Época geológica que ocurrió hace aproximadamente 66 millones de años, después de la extinción de los dinosaurios.
-- **Paleobotánica:** Rama de la paleontología que estudia los fósiles de plantas.
-
----
-
-## Licencia de Contenido
-
-El contenido de este proyecto, incluyendo texto, imágenes y recursos educativos, está bajo la Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional.
