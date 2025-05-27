@@ -18,26 +18,21 @@
     top: -20px;
 }
 .scroll-x-img {
-  overflow-x: auto;
+  overflow-x: hidden;  /* <--- Cambia a hidden */
   overflow-y: hidden;
-  width: 79vw;
+  width: 77vw;
   height: 90vh;
   white-space: nowrap;
   position: relative;
-    margin: 0 auto;
+  margin: 0 auto;
+  padding: 0 !important;
 }
 
 .img-LineaTiempo {
   display: block;
-  height: calc(90vh * 2652 / 1730); /* Escala para que 1730px = 100vh */
-  width: auto;                       /* Mantiene la proporción */
-  min-width: 0;
-  max-width: none;
+  height: 90vh;
 }
 
-.scroll-x-img {
-  position: relative;
-}
 
 .overlay-linea {
   position: absolute;
@@ -61,12 +56,14 @@
 .scroll-x-img:fullscreen {
   width: 100vw !important;
   height: 100vh !important;
+  overflow-x: auto !important;   /* <--- Activa scroll horizontal */
+  overflow-y: hidden !important;
   background: #000;
   z-index: 9999;
 }
 
 .scroll-x-img:fullscreen .img-LineaTiempo {
-  height: calc(100vh * 2652 / 1730); /* Escala para que 1730px = 100vh en fullscreen */
+  height: 100vh; 
 }
 
 .scroll-x-img:fullscreen .overlay-linea {

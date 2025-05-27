@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './HomePage.css';
 import ButtonLink from './Components/ButtonLink';
+import { getTitleLeftEnd } from './utils/getTitleLeftEnd';
 
 function HomePage() {
   const location = useLocation();
@@ -44,16 +45,7 @@ function HomePage() {
       // Interpolación de valores
       const top = 130 - (137 * progress); // de 130px a -7px
       const width = window.innerWidth;
-      let leftEnd;
-      if (width <= 600) {
-        leftEnd = 22; // móvil
-      } else if (width <= 1000) {
-        leftEnd = 13; // tablet
-      } else if (width <= 1500) {
-        leftEnd = 6; // laptop
-      } else {
-        leftEnd = 4; // desktop grande
-      }
+      const leftEnd = getTitleLeftEnd(width);
       const left = 50 - ((50 - leftEnd) * progress);  // de 50% a 4%
       const scale = 1 - (0.6 * progress); // de 1 a 0.4
       const translateX = 50 - (50 * progress); // de -50% a 0%
@@ -151,7 +143,7 @@ function HomePage() {
         </section>
         <img className="lineas-decoracion-1" src="/Images/Líneas Decoración - 1.png" alt="Fósil pequeño 2" />
 
-        <section className="Info">
+        <section className="Info" id="prototipos">
           <div className="Info-Text">
             <h4>Prototipos</h4>
             <p>

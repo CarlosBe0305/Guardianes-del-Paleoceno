@@ -28,7 +28,7 @@ function LineaTiempo() {
                 <h1>Tiempo</h1>
             </div>
             <div className="container">
-                <div className="row">
+                <div className="">
                     <div>
                         <p>En esta sección podrás ver la historia de fósiles de plantas prehistóricas.</p>
                     </div>
@@ -41,7 +41,9 @@ function LineaTiempo() {
                         </div>
                     </div>
                 </div>
+                <br />
                 <ButtonLink href="/" className="btn btn-primary">Volver a la página principal</ButtonLink>
+                <br />
             </div>
         </div>
     );

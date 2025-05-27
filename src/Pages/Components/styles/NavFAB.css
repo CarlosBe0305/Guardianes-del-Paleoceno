@@ -43,14 +43,35 @@
   margin-left: 20px; /* Ajusta el valor según lo que necesites */
 }
 
-.navbar-Title{
+.navbar-Title {
     position: fixed;
     top: 0.6%;
-    left: 8%;
+    left: 22%; /* Móvil por defecto */
     z-index: 100;
     color: #04382B;
     text-decoration: none;
     transform: translateX(0) scale(0.5);
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 1000px) {
+  .navbar-Title {
+    left: 13%;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1001px) and (max-width: 1500px) {
+  .navbar-Title {
+    left: 12%;
+  }
+}
+
+/* Desktop grande */
+@media (min-width: 1501px) {
+  .navbar-Title {
+    left: 8%;
+  }
 }
 
 body {
