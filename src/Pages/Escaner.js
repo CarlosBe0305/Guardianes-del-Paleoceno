@@ -1,23 +1,7 @@
-import React, { useRef } from "react";
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import './Escaner.css';
 import ButtonLink from './Components/ButtonLink';
 
 function Escaner() {
-  const scrollImgRef = useRef(null);
-
-  const handleFullscreen = () => {
-    const el = scrollImgRef.current;
-    if (el.requestFullscreen) {
-      el.requestFullscreen();
-    } else if (el.webkitRequestFullscreen) {
-      el.webkitRequestFullscreen();
-    } else if (el.msRequestFullscreen) {
-      el.msRequestFullscreen();
-    }
-  };
-
     return (
         <div className="Escaner">
             <div className="Banner-Escaner">
