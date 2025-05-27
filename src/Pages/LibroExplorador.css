@@ -1,0 +1,19 @@
+.Banner-Libro{
+    height: 40vh;
+    background-color: #f9eaae;
+    z-index: 1;
+    top: -15px;
+    position: relative;
+    width: 100vw;
+}
+.row{
+    text-align: center;
+}
+.Escaner{
+    background-color: #FFF4E2;
+    color: #04382b;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    top: -20px;
+}

@@ -36,6 +36,7 @@ function NavFAB() {
               <Nav.Link href="/#proyecto">Nuestro Proyecto</Nav.Link>
               <Nav.Link href="/#proceso">El Proceso</Nav.Link>
               <NavDropdown title="Experiencias" id="basic-nav-dropdown">
+                <NavDropdown.Item href="LibroExplorador">Libro del Explorador</NavDropdown.Item>
                 <NavDropdown.Item href="Escaner">Escáner</NavDropdown.Item>
                 <NavDropdown.Item href="LineaTiempo">
                   Línea de Tiempo
