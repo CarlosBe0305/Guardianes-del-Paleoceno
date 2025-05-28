@@ -7,9 +7,9 @@ function LibroExplorador() {
             <div className="Banner-Libro">
             </div>
             <div className="Title">
-                <h2>Encuentra</h2>
-                <h3>los </h3>
-                <h1>Fósiles</h1>
+                <h2>Libro</h2>
+                <h3>del </h3>
+                <h1>Explorador</h1>
             </div>
             <div className="container">
                 <div>

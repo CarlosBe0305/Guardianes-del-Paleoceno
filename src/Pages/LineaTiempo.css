@@ -34,6 +34,11 @@
   height: 90vh;
 }
 
+.LineaTiempo-centro {
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+}
 
 .overlay-linea {
   position: absolute;
