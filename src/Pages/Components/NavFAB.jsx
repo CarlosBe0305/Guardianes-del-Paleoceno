@@ -41,7 +41,6 @@ function NavFAB() {
                 <NavDropdown.Item href="LineaTiempo">
                   Línea de Tiempo
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#prototipos">
                   Experiencia Completa

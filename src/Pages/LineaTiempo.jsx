@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useMemo } from "react";
 import './LineaTiempo.css';
 import ButtonLink from './Components/ButtonLink';
 
@@ -8,13 +8,13 @@ function LineaTiempo() {
   const [activeBlock, setActiveBlock] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
-  // Define los bloques: scrollLeft en px y segundos del audio
-  const blocks = [
+  // Usa useMemo para evitar el warning de dependencias
+  const blocks = useMemo(() => [
     { start: 0, end: 1500, audioStart: 0, audioEnd: 12 },
     { start: 1451, end: 2900, audioStart: 12, audioEnd: 35.5 },
-    { start: 2901, end: 5900, audioStart: 35.5, audioEnd: 58.5 },
+    { start: 2801, end: 5800, audioStart: 35.5, audioEnd: 58.5 },
     { start: 5801, end: 17500, audioStart: 58.5, audioEnd: 80.5 }
-  ];
+  ], []);
 
   useEffect(() => {
     function handleScroll() {

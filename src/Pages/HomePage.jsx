@@ -1,11 +1,13 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './HomePage.css';
 import ButtonLink from './Components/ButtonLink';
+import PopUp from './Components/PopUp';
 import { getTitleLeftEnd } from './utils/getTitleLeftEnd';
 
 function HomePage() {
   const location = useLocation();
+  const [popupPrototiposOpen, setPopupPrototiposOpen] = useState(false);
 
   // Scroll al montar
   useEffect(() => {
@@ -114,7 +116,9 @@ function HomePage() {
               guiados por un personaje lúdico.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <ButtonLink>Más Información</ButtonLink>
+              <ButtonLink href={"/Proyecto"}>
+                Más Información
+              </ButtonLink>
             </div>
           </div>
 
@@ -156,8 +160,16 @@ function HomePage() {
               para lograr un equilibrio entre diversión, comprensión y participación activa.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <ButtonLink>Más Información</ButtonLink>
+              <ButtonLink onClick={() => setPopupPrototiposOpen(true)}>
+                Más Información
+              </ButtonLink>
             </div>
+            <PopUp open={popupPrototiposOpen} onClose={() => setPopupPrototiposOpen(false)}>
+              <h2>Prototipos</h2>
+              <p>
+                Aquí puedes poner el contenido que desees mostrar sobre los prototipos.
+              </p>
+            </PopUp>
           </div>
           <div className="Info-Image fossil-group">
             <img className="fossil-small1" src="/Images/Fósil 1.png" alt="Fósil grande" />
@@ -180,9 +192,9 @@ function HomePage() {
               es clave para formar futuras generaciones con pensamiento crítico, amor
               por el entorno natural y capacidad para imaginar otros mundos posibles.
             </p>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            {/* <div style={{ display: 'flex', justifyContent: 'center' }}>
               <ButtonLink>Más Información</ButtonLink>
-            </div>
+            </div> */}
             <img className="Herramienta" src="/Images/Herramienta.png" alt="Herramienta" />
           </div>
 
