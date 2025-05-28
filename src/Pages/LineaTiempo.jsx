@@ -30,14 +30,22 @@ function LineaTiempo() {
                     <div>
                         <p>En esta sección podrás ver la historia de fósiles de plantas prehistóricas.</p>
                     </div>
-                    <div className="scroll-x-img" ref={scrollImgRef}>
-                        <img src="/Images/Linea del tiempo.png" alt="Línea de tiempo" className="img-LineaTiempo" />
-                        <div className="overlay-linea">
-                            <ButtonLink className="overlay-btn" onClick={handleFullscreen}>
-                              Ver en pantalla completa
-                            </ButtonLink>
-                        </div>
-                    </div>
+                    <div
+  style={{
+    position: "relative",
+    width: "max-content",
+    margin: "0 auto"
+  }}
+>
+  <div className="scroll-x-img" ref={scrollImgRef}>
+    <img src="/Images/Linea del tiempo.png" alt="Línea de tiempo" className="img-LineaTiempo" />
+  </div>
+  <div className="overlay-linea">
+    <ButtonLink className="overlay-btn" onClick={handleFullscreen}>
+      Ver en pantalla completa
+    </ButtonLink>
+  </div>
+</div>
                 </div>
                 <br />
                 <ButtonLink href="/" className="btn btn-primary">Volver a la página principal</ButtonLink>

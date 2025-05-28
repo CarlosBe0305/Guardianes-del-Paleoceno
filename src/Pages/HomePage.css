@@ -139,7 +139,7 @@ section{
   right: -100px;
   width: 40%;
   max-width: none; /* Permite que sobresalga, pero será recortada */
-  z-index: 1000;
+  z-index: 10;
   pointer-events: none;
 }
 

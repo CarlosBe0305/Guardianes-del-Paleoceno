@@ -20,7 +20,7 @@
 ## Acerca de
 
 **Guardianes del Paleoceno** es una experiencia inmersiva para la divulgación científica en un contexto de exposición museística, enfocada en la paleobotánica y dirigida a niñas y niños.  
-**Este sitio web** alberga toda la información, investigación, desarrollo y resultados del proyecto expositivo Guardianes del Paleoceno. Aquí encontrarás recursos, documentación, actividades y materiales relacionados con la experiencia museística, así como el proceso de creación y producción del proyecto.
+**Este sitio web** pretende presentar de forma clara, visual y estructurada la propuesta educativa del proyecto, sus fundamentos conceptuales, su proceso de diseño y los prototipos desarrollados, con el fin de comunicarlo a públicos generales, académicos y posibles aliados.
 
 ---
 
