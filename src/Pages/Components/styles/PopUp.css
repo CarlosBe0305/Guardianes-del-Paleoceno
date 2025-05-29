@@ -9,7 +9,9 @@
 }
 
 .popup-content {
+  text-align: left;
   background: #fff;
+  color: #04382B;
   padding: 2rem;
   border-radius: 12px;
   max-width: 90vw;
@@ -27,3 +29,47 @@
   font-size: 2rem;
   cursor: pointer;
 }
+
+.Prototipos-Grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.Prototipo-Card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  width: 200px;
+  transition: box-shadow 0.2s;
+}
+.Prototipo-Card:hover {
+  box-shadow: 0 4px 16px #0002;
+}
+.Prototipo-Link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.Prototipo-Imagen {
+  height: 120px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Prototipo-Imagen img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.Prototipo-Card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+

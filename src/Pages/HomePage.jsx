@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './HomePage.css';
 import ButtonLink from './Components/ButtonLink';
-import PopUp from './Components/PopUp';
+import PrototiposPopup from './Components/PrototiposPopUp';
 import { getTitleLeftEnd } from './utils/getTitleLeftEnd';
 
 function HomePage() {
@@ -165,12 +165,7 @@ function HomePage() {
                 Más Información
               </ButtonLink>
             </div>
-            <PopUp open={popupPrototiposOpen} onClose={() => setPopupPrototiposOpen(false)}>
-              <h2>Prototipos</h2>
-              <p>
-                Aquí puedes poner el contenido que desees mostrar sobre los prototipos.
-              </p>
-            </PopUp>
+            <PrototiposPopup open={popupPrototiposOpen} onClose={() => setPopupPrototiposOpen(false)} />
           </div>
           <div className="Info-Image fossil-group">
             <img className="fossil-small1" src="/Images/Fósil 1.png" alt="Fósil grande" />

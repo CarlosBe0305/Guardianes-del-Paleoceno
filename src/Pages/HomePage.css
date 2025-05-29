@@ -191,6 +191,7 @@ section{
   border-radius: 50px;
   padding: 20px;
   text-align: center;
+  z-index: 0;
 }
 .SobreNosotros .Info-Text{
   position: relative;
