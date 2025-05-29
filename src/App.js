@@ -3,6 +3,7 @@ import NavFAB from './Pages/Components/NavFAB';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import Proyecto from './Pages/Proyecto';
+import Proceso from './Pages/Proceso';
 import LineaTiempo from './Pages/LineaTiempo';
 import Escaner from './Pages/Escaner';
 import LibroExplorador from './Pages/LibroExplorador';
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/Proyecto" element={<Proyecto />} />
+          <Route path="/Proceso" element={<Proceso />} />
           <Route path="/LineaTiempo" element={<LineaTiempo />} />
           <Route path="/Escaner" element={<Escaner />} />
           <Route path="/LibroExplorador" element={<LibroExplorador />} />

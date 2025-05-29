@@ -141,7 +141,7 @@ function HomePage() {
               cognitivas de los niños y niñas.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <ButtonLink>Más Información</ButtonLink>
+              <ButtonLink href={"/Proceso"}>Más Información</ButtonLink>
             </div>
           </div>
 

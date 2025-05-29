@@ -6,7 +6,7 @@ function Proyecto() {
       <header className="App-header">
         <div className="Banner-Proyecto">
         </div>
-        <div className="Title">
+        <div className="Title-Proyecto">
           <h2>Nuestro</h2>
           <h1>Proyecto</h1>
         </div>
