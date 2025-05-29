@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2.5rem;      /* Espacio horizontal para evitar las esquinas */
+  padding: 1rem;      /* Espacio horizontal para evitar las esquinas */
   margin: 0.5rem;
   background: #99b5bb;
   border-radius: 70px;
@@ -70,6 +70,14 @@
   overflow: hidden;          /* Esto evita que el texto se salga */
   min-width: 180px;          /* Opcional: asegura un ancho mínimo */
   word-break: break-word;    /* Rompe palabras largas si es necesario */
+  
+}
+.Etapas-Content > div h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2f6581;
+  position: relative;
+  top: -10px; /* Ajusta la posición del texto */
 }
 
 .Etapas-Content > div:hover {

@@ -55,32 +55,46 @@ function Proceso() {
                   className={etapa.key}
                   onMouseEnter={() => setHovered(idx)}
                   onMouseLeave={() => setHovered(null)}
-                  style={{ position: "relative" }}
+                  style={{
+                    minHeight: "120px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    position: "relative",
+                  }}
                 >
-                  <h3
-                    style={{
-                      visibility: hovered === idx ? "hidden" : "visible",
-                      position: hovered === idx ? "absolute" : "static",
-                      width: "100%",
-                      left: 0,
-                      top: 0,
-                    }}
-                  >
-                    {etapa.title}
-                  </h3>
                   <p
                     style={{
-                      visibility: hovered === idx ? "visible" : "hidden",
-                      position: hovered === idx ? "static" : "absolute",
-                      width: "100%",
-                      left: 0,
-                      top: 0,
-                      margin: 0, 
-                      fontSize: "0.8rem",
+                      width: "90%",
+                      textAlign: "center",
+                      margin: 0,
+                      fontSize: "0.95rem",
+                      zIndex: 1,
+                      opacity: hovered === idx ? 1 : 0,
+                      transition: "opacity 0.2s",
+                      pointerEvents: hovered === idx ? "auto" : "none",
                     }}
                   >
                     {etapa.desc}
                   </p>
+                  <h3
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      margin: 0,
+                      width: "90%",
+                      textAlign: "center",
+                      opacity: hovered === idx ? 0 : 1,
+                      pointerEvents: "none",
+                      transition: "opacity 0.2s",
+                      zIndex: 2,
+                    }}
+                  >
+                    {etapa.title}
+                  </h3>
                 </div>
               ))}
             </div>
