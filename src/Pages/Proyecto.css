@@ -34,7 +34,7 @@
 .contenedores-bg {
   position: relative;
   z-index: 1;
-  padding: 0 5rem; /* Espacio alrededor del contenido */
+  padding: 0 4rem; /* Espacio alrededor del contenido */
 }
 
 .ContenedoresProyecto-bg {
@@ -52,7 +52,7 @@
 .contenedores-bg p {
   position: relative;
   z-index: 2;
-  font-size: 1.2rem;      /* Más pequeño que el normal */
+  font-size: 1rem;      /* Más pequeño que el normal */
   line-height: 1.3;
   margin: 0.5rem 0;
   color: #724c3d;
