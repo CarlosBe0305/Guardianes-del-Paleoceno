@@ -75,6 +75,6 @@
   height: 100vh; 
 }
 
-.scroll-x-img:fullscreen .overlay-linea {
+.scroll-x-img:fullscreen .lineaoverlay- {
   display: none !important;
 }

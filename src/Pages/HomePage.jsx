@@ -100,7 +100,8 @@ function HomePage() {
         </section>
         <section className="Info" id="proyecto">
           <div className="Info-Image">
-            <img src="/Images/DinoPablo.png" alt="Alianza Biofilia" />
+            <img src="/Images/Nombre DinoPablo.png" className="NombreDinoPablo" alt="DinoPablo" />
+            <img src="/Images/DinoPablo.png" alt="DinoPablo" />
 
           </div>
           <div className="Info-Text">

@@ -13,6 +13,7 @@
     position: relative;
     width: 100vw;
 }
+
 .Decorativo1 {
   position: absolute;
   top: -300px;
@@ -101,6 +102,7 @@ section{
   display: flex; /* Activa Flexbox para centrar la imagen */
   align-items: center; /* Centra la imagen verticalmente */
   justify-content: center; /* Centra la imagen horizontalmente */
+  position: relative;
 }
 
 /* Solo para la sección de Prototipos */
@@ -147,7 +149,6 @@ section{
 .Info-Image:not(.fossil-group) img {
   max-height: 100%;
   max-width: 90%;
-  width: auto;
   height: auto;
   display: block;
   object-fit: contain;
@@ -168,7 +169,7 @@ section{
   margin-top: 0;      /* Elimina margen superior */
   padding-top: 0;     /* Elimina padding superior */
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -211,4 +212,24 @@ section{
 /* Solo elimina el margen superior en la primera sección */
 .Info:first-of-type {
   margin-top: 0;
+}
+
+.NombreDinoPablo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  pointer-events: none;
+  width: 35%;    /* Cambia aquí a un valor fijo más pequeño */
+  height: auto;
+  transform: translate(-65%, -80%);
+}
+
+.ContenedoresProyecto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los contenedores */
+  margin-top: 20px; /* Espacio arriba de los contenedores */
 }

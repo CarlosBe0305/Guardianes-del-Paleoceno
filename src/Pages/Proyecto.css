@@ -5,7 +5,6 @@
   position: static;
   text-align: center;
   width: 100%;
-  height: 25vh;
 }
 
 .Title {
@@ -14,13 +13,49 @@
   margin-bottom: 2rem; /* Espacio debajo del título */
 }
 
+.Banner-Proyecto {
+    height: 25vh;
+    z-index: 1;
+    position: relative;
+    width: 100vw;
+}
 .Proyecto{
+  position: relative;
     text-align: justify !important;
     background-color: #cb9b69;
-    color: FFF4E2;
+    color: #FFF4E2;
     border-radius: 40px;
     width: 80%;
     margin: 0 auto;
   margin-top: 2rem; /* Espacio arriba del contenido */
   padding: 3rem;
+}
+
+.contenedores-bg {
+  position: relative;
+  z-index: 1;
+  padding: 0 5rem; /* Espacio alrededor del contenido */
+}
+
+.ContenedoresProyecto-bg {
+  position: absolute;
+  top: -20px;
+  left: 40%;
+  transform: translateX(-45%);
+  width: 120%;
+  height: 140%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contenedores-bg h4,
+.contenedores-bg p {
+  position: relative;
+  z-index: 2;
+  font-size: 1.2rem;      /* Más pequeño que el normal */
+  line-height: 1.3;
+  margin: 0.5rem 0;
+  color: #724c3d;
+  word-break: break-word;
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
 }
