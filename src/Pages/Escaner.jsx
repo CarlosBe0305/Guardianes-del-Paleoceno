@@ -12,9 +12,9 @@ function Escaner() {
                 <h1>Fósiles</h1>
             </div>
             <div className="container">
-                <div className="">
+                <div className="centered">
                     <div>
-                        <p>En esta sección podrás ver la historia de fósiles de plantas prehistóricas.</p>
+                        <p>En esta sección deberás encontrar los fósiles de plantas prehistóricas escondidos en la arena.</p>
                     </div>
                     <div style={{ width: "100%" }}>
                       <div style={{ position: "relative", paddingBottom: "56.25%", paddingTop: 0, height: 0 }}>

@@ -12,9 +12,9 @@ function LibroExplorador() {
                 <h1>Explorador</h1>
             </div>
             <div className="container">
-                <div>
+                <div className="centered">
                     <div>
-                        <p>En esta sección podrás ver la historia de fósiles de plantas prehistóricas.</p>
+                        <p>Este libro será tu herramienta principal durante toda la experiencia.</p>
                     </div>
                     <div style={{ position: "relative", paddingTop: "max(60%,324px)", width: "100%", height: 0 }}>
                         <iframe

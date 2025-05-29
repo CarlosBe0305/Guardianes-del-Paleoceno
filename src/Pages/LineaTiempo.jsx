@@ -13,7 +13,11 @@ function LineaTiempo() {
     { start: 0, end: 1500, audioStart: 0, audioEnd: 12 },
     { start: 1501, end: 2900, audioStart: 12, audioEnd: 35.5 },
     { start: 2901, end: 5800, audioStart: 35.5, audioEnd: 58.5 },
-    { start: 5801, end: 17500, audioStart: 58.5, audioEnd: 80.5 }
+    { start: 5801, end: 10500, audioStart: 58.5, audioEnd: 80.5 },
+    { start: 10501, end: 15000, audioStart: 80.5, audioEnd: 109.5 },
+    { start: 15001, end: 21401, audioStart: 109.5, audioEnd: 151 },
+    { start: 21401, end: 25800, audioStart: 151, audioEnd: 195 },
+    { start: 25801, end: 30000, audioStart: 195, audioEnd: 211 }
   ], []);
 
   useEffect(() => {
@@ -108,7 +112,7 @@ function LineaTiempo() {
         <h1>Tiempo</h1>
       </div>
       <div className="container">
-        <div className="">
+        <div className="centered">
           <div>
             <p>En esta sección podrás ver la historia de fósiles de plantas prehistóricas.</p>
           </div>
