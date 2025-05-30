@@ -1,24 +1,15 @@
-.App{
-    background-color: #FFF4E2;
+.Proyecto-body {
+  background-color: #FFF4E2;
+  padding-top: 100px;
 }
-.App-header {
-  position: static;
-  text-align: center;
-  width: 100%;
-}
+
 
 .Title-Proyecto {
-    text-align: center;
-    color: #724c3d;
-  margin-bottom: 2rem; /* Espacio debajo del título */
+  text-align: center;
+  color: #724c3d;
+  margin-top: 0;
 }
 
-.Banner-Proyecto {
-    height: 25vh;
-    z-index: 1;
-    position: relative;
-    width: 100vw;
-}
 .Proyecto{
   position: relative;
     text-align: justify !important;
@@ -27,23 +18,22 @@
     border-radius: 40px;
     width: 80%;
     margin: 0 auto;
-  margin-top: 2rem; /* Espacio arriba del contenido */
   padding: 3rem;
 }
 
 .contenedores-bg {
   position: relative;
   z-index: 1;
-  padding: 0 4rem; /* Espacio alrededor del contenido */
+  padding: 0 5%; /* Espacio alrededor del contenido */
 }
 
 .ContenedoresProyecto-bg {
   position: absolute;
-  top: -20px;
+  top: -50px;
   left: 40%;
   transform: translateX(-45%);
-  width: 120%;
-  height: 140%;
+  width: 150%;
+  height: 150%;
   z-index: 0;
   pointer-events: none;
 }
@@ -52,10 +42,41 @@
 .contenedores-bg p {
   position: relative;
   z-index: 2;
-  font-size: 1rem;      /* Más pequeño que el normal */
+  font-size: 1.2rem; /* Tamaño base para escritorio */
   line-height: 1.3;
-  margin: 0.5rem 0;
   color: #724c3d;
   word-break: break-word;
-  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  z-index: 1;
+}
+
+/* Escala el texto en tablets */
+@media (max-width: 900px) {
+  .contenedores-bg h4,
+  .contenedores-bg p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Escala el texto en móviles */
+@media (max-width: 600px) {
+  .Banner-Proyecto {
+    height: 60px !important;   /* Ajusta este valor según el alto de tu Title-Proyecto */
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Title-Proyecto {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+  }
+  .Proyecto{
+    margin-top: 0;
+  }
+  .contenedores-bg h4,
+  .contenedores-bg p {
+    font-size: 0.8rem;
+  }
 }

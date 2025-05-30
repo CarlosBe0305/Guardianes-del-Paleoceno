@@ -4,12 +4,12 @@
   box-sizing: border-box;
   margin: 0;
   left: 0;
-  right: 0;
+  right: 50px;
   overflow-x: hidden;
   z-index: 100;
 }
 .App-Header {
-    height: 100%;
+    height: 0;
     width: 100%;
 }
 
@@ -45,7 +45,6 @@
 
 .navbar-Title {
     position: fixed;
-    top: 0.6%;
     left: 2%; /* Móvil por defecto */
     z-index: 100;
     color: #04382B;
@@ -53,24 +52,24 @@
     transform: translateX(0) scale(0.5);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
   .navbar-logo {
     display: none !important;
   }
-}
-
-
-/* Laptop */
-@media (min-width: 1001px) and (max-width: 1500px) {
   .navbar-Title {
-    left: 9.5%;
+    left: -6%;
+    margin: auto;
   }
 }
+
+
+
 
 /* Desktop grande */
 @media (min-width: 1501px) {
   .navbar-Title {
     left: 8%;
+    margin: auto;
   }
 }
 
@@ -85,5 +84,11 @@ body {
   width: 100vw;
   max-width: 100vw;
   box-sizing: border-box;
+}
+
+/* Proyecto.css o NavFAB.css */
+.navbar-toggler {
+  margin-left: auto !important;
+  z-index: 1000;
 }
 

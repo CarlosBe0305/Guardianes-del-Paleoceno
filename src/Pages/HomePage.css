@@ -4,29 +4,36 @@
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0;
+  margin: 0;
 }
 .Banner-Home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 50vh;
     background-color: #DFE1AE;
     z-index: 1;
-    top: -15px;
-    position: relative;
-    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .Decorativo1 {
-  position: absolute;
-  top: -300px;
+  position: absolute !important;
+  top: -35%; /* Ajusta este valor para que quede justo encima de Proceso */
   left: 50%;
   transform: translateX(-50%);
   width: 40%;
-  z-index: 1000; /* mucho mayor */
+  max-width: 400px;
+  z-index: 10;
+  pointer-events: none; /* Para que no tape botones debajo */
 }
-.App-body{
+.Home-body{
   background-color: #FFF4E2;
   position: relative;
   overflow: hidden;
-  top: -20px;
+  padding-top: 100px; /* Espacio para el banner */
 }
 .App-header{
   position: relative;
@@ -35,6 +42,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  padding-top: 30vh; /* Ajusta según el alto real del banner */
 }
 .Title {
   position: absolute;
@@ -175,9 +183,8 @@ section{
   z-index: 2;
 }
 .Proceso{
-  background-color: #fece76;
   border-radius: 50px;
-  padding: 20px;
+  padding: 3% !important;
   text-align: center;
   padding-top: 0;
   margin-top: 0;
@@ -233,4 +240,145 @@ section{
   justify-content: center;
   gap: 20px; /* Espacio entre los contenedores */
   margin-top: 20px; /* Espacio arriba de los contenedores */
+}
+
+/* HomePage.css */
+
+@media (max-width: 1500px) {
+  .Herramienta{
+    display: none !important;
+  }
+}
+  
+@media (max-width: 900px) {
+  .Title{
+    margin-top: 5%;
+  }
+  
+  .Decorativo1 {
+    width: 40vw !important;
+    max-width: 90vw !important;
+    top: -25% !important;
+  }
+  .App-body {
+    padding: 0 10px;
+  }
+
+  .Info {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .Info-Text, .Info-Image {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .Info-Image img,
+  .fossil-group img,
+  .Dinosaurios-Image img,
+  .Herramienta {
+    max-width: 90vw !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    display: block;
+  }
+
+  .Title {
+    width: 100% !important;
+    min-width: unset !important;
+    text-align: center !important;
+    padding: 0 10px !important;
+    left: 0 !important;
+    transform: none !important;
+    font-size: unset !important; /* No reducir aquí */
+    z-index: 10 !important;
+    
+  }
+.Title h1 {
+    font-size: 2.5rem !important;
+  }
+  .Title h2, .Title h3 {
+    font-size: 1.5rem !important;
+  }
+  .Title {
+    font-size: unset !important;
+    padding: 0 5vw !important;
+  }
+  .Decorativo1,
+  .lineas-decoracion-1 {
+    max-width: 80vw !important;
+    height: auto !important;
+    margin: 1rem auto !important;
+    display: block;
+  }
+
+  .Prototipos-Grid {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2rem !important;
+  }
+
+  .Prototipo-Card {
+    width: 90vw !important;
+    max-width: 350px !important;
+  }
+  
+  .Info-Image.fossil-group {
+    min-height: 320px !important; /* Ajusta este valor según el tamaño de tus fósiles */
+    height: 40vw !important;      /* O usa un valor relativo si prefieres */
+    position: relative;
+  }
+
+  .fossil-main {
+    width: 60vw !important;   /* Ajusta este valor según lo que prefieras, por ejemplo 50vw o 65vw */
+    max-width: 350px !important; /* Opcional: limita el tamaño máximo */
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+  }
+}
+
+/* --- Ajustes para pantallas muy pequeñas --- */
+@media (max-width: 600px) {
+  
+  .Title{
+    margin-top: 25px;
+  }
+  .Banner-Home {
+    height: 20vh !important;   /* Ajusta este valor según el alto de tu Title */
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Dinosaurios-Image {
+    top: 15% !important; /* Ajusta este valor según lo que necesites */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    z-index: 3 !important;
+  }
+  #Biofilia {
+    padding-top: 70px !important; /* O menos, ajusta según el alto de tu banner+title */
+  }
+  .NombreDinoPablo {
+    top: 49% !important; /* Sube el nombre, ajusta este valor según lo que necesites */
+    transform: translate(-65%, -70%) !important;
+    width: 50vw !important; /* Opcional: hazlo un poco más grande si lo deseas */
+  }
+
+  .App-header {
+    padding-top: 11vh !important; /* Igual al alto del banner en móvil */
+  }
+
+  .Decorativo1 {
+    display: none !important; /* Oculta el decorativo en móvil */
+  }
 }

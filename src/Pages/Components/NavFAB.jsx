@@ -14,7 +14,7 @@ function NavFAB() {
 
   return (
     <div className="App-Header">
-      <Navbar expand="lg" >
+      <Navbar expand="xl" >
         <Container fluid className="fixed-top">
           {location.pathname !== "/Biofilia" && (
             <Navbar.Brand href="/" className="navbar-logo">
@@ -32,7 +32,7 @@ function NavFAB() {
               <h1>PALEOCENO</h1>
             </Navbar.Brand>
           )}
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto pe-3 navfab">
               <Nav.Link href="/#Biofilia">Biofilia</Nav.Link>

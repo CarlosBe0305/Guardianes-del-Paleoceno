@@ -33,14 +33,11 @@ function Proceso() {
   ];
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="Banner-Proceso">
-        </div>
-        <div className="Title-Proceso">
+    <div className="Proceso-body">
+      
+      <div className="Title-Proceso">
           <h1>El Proceso</h1>
         </div>
-      </header>
       <div className="Proceso">
         <div className="Proceso-Content">
           <p>

@@ -2,15 +2,11 @@ import './Proyecto.css';
 
 function Proyecto() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="Banner-Proyecto">
-        </div>
-        <div className="Title-Proyecto">
+    <div className="Proyecto-body">
+      <div className="Title-Proyecto">
           <h2>Nuestro</h2>
           <h1>Proyecto</h1>
         </div>
-      </header>
       <div className="Proyecto">
         <div className="Proyecto-Content">
           <p>

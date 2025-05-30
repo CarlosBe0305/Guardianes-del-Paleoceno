@@ -1,7 +1,9 @@
-.App{
+.Proceso-body {
     background-color: #FFF4E2;
+    padding-top: 150px;
 }
 .App-header {
+  
   position: static;
   text-align: center;
   width: 100%;
@@ -15,6 +17,7 @@
 }
 
 .Title-Proceso {
+    position: relative;
     text-align: center;
     width: 100%;
     z-index: 2;
@@ -95,4 +98,21 @@
 }
 .Proceso-Content .Info-Text p{
   font-size: 1rem;
+}
+@media (max-width: 900px) {
+  .Etapas-Content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+  }
+  .Etapas-Content > div {
+    min-width: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+  }
+  /* Opcional: elimina grid-area para evitar solapamientos */
+  .Etapa1, .Etapa2, .Etapa3, .Etapa4, .Etapa5 {
+    grid-area: unset !important;
+  }
 }

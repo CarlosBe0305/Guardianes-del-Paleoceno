@@ -3,7 +3,7 @@ import ButtonLink from './Components/ButtonLink';
 
 function LibroExplorador() {
     return (
-        <div className="Escaner">
+        <div className="LibroExplorador">
             <div className="Banner-Libro">
             </div>
             <div className="Title">

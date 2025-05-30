@@ -45,7 +45,10 @@ function HomePage() {
       const progress = Math.min(scrollY / maxScroll, 1);
 
       // Interpolación de valores
-      const top = 130 - (137 * progress); // de 130px a -7px
+      const isMobile = window.innerWidth < 600;
+      const top = isMobile
+        ? 25 - (32 * progress) // de 25px a -7px en móvil
+        : 130 - (137 * progress); // de 130px a -7px en desktop
       const width = window.innerWidth;
       const leftEnd = getTitleLeftEnd(width);
       const left = 50 - ((50 - leftEnd) * progress);  // de 50% a 4%
@@ -78,7 +81,8 @@ function HomePage() {
           <img src="/Images/Dinosaurios.png" alt="Dinosaurios" />
         </div>
       </header>
-      <div className="App-body">
+
+      <div className="Home-body">
         <section className="Info" id="Biofilia">
           <div className="Info-Text">
             <h4>Alianza Biofilia</h4>
@@ -125,27 +129,28 @@ function HomePage() {
 
         </section>
 
-        <section className="Info Proceso" id="proceso">
-          <img className="Decorativo1" src="/Images/Decorativo 1.png" alt="Alianza Biofilia" />
-
-          <div className="Info-Text">
-            <h4>El Proceso</h4>
-            <p>
-              El diseño de Biofilia fue el resultado de un proceso riguroso que combinó
-              investigación académica, prototipado iterativo, pruebas con usuarios reales
-              y colaboración con expertos en educación y ciencias naturales. A través de
-              varias fases desde la ideación hasta la validación en campo fuimos afinando
-              las actividades, el contenido visual y las estrategias pedagógicas. <br />
-              Esta sección presenta cómo cada etapa del proceso contribuyó a construir
-              una experiencia significativa, alineada con los intereses y capacidades
-              cognitivas de los niños y niñas.
-            </p>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <ButtonLink href={"/Proceso"}>Más Información</ButtonLink>
+        <div style={{ position: "relative" }}>
+          <img className="Decorativo1" src="/Images/Decorativo 1.png" alt="Decorativo" />
+          <section className="Info Proceso" id="proceso">
+            <div className="Info-Text">
+              <h4>El Proceso</h4>
+              <p>
+                El diseño de Biofilia fue el resultado de un proceso riguroso que combinó
+                investigación académica, prototipado iterativo, pruebas con usuarios reales
+                y colaboración con expertos en educación y ciencias naturales. A través de
+                varias fases desde la ideación hasta la validación en campo fuimos afinando
+                las actividades, el contenido visual y las estrategias pedagógicas. <br />
+                Esta sección presenta cómo cada etapa del proceso contribuyó a construir
+                una experiencia significativa, alineada con los intereses y capacidades
+                cognitivas de los niños y niñas.
+              </p>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <ButtonLink href={"/Proceso"}>Más Información</ButtonLink>
+              </div>
             </div>
-          </div>
 
-        </section>
+          </section>
+        </div>
         <img className="lineas-decoracion-1" src="/Images/Líneas Decoración - 1.png" alt="Fósil pequeño 2" />
 
         <section className="Info" id="prototipos">

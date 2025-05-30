@@ -1,4 +1,7 @@
 .Banner-Libro{
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 40vh;
     background-color: #f9eaae;
     z-index: 1;
@@ -9,7 +12,7 @@
 .row{
     text-align: center;
 }
-.Escaner{
+.LibroExplorador{
     background-color: #FFF4E2;
     color: #04382b;
     position: relative;
